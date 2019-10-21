@@ -18,6 +18,7 @@ Le programme executable est un ensemble autonome d'instructions en langage machi
 #define Nom "Jojo"
 #define CAR 'x'
 
+
 //Commentaires ligne
 /* comment aire paragraphes*/
 
@@ -126,14 +127,127 @@ void main()
          && : ET (test une expression si la 1e est fausse)
          | : OU (test toute les expressions)
          || :  OU(test une espression si la 1e est vraie)
-         !:
+         !: PAS égale
 
         //Factorisation
         += ajoute une variable à une autre
         -= soustraire à l’expression
         /=
         *= multiplie une variable à gauche par une expression à droite*/
+
         …
+    //Structure Conditions et boucles
+
+        int a=0,b=0, c=0, d=0;
+        //Condition
+        if(a==b)
+    {
+        printf("Ils sont égaux\n");
+    }
+       else
+        {
+        printf("Ils sont différents\n");
+       }
+
+       //Condition avec des opérateurs logiques
+
+       if((a==b) && (a==c))
+       {
+           printf("ils sont tous égaux\n");
+       }
+       else
+        {
+        printf("ils sont différents\n");
+       }
+
+       if ((a==b) || (a==c))
+       {
+           printf("Ils sont égaux\n");
+       }
+       else
+       {
+           printf("Ils sont diff\n");
+       }
+
+       if ((a==b) || (a==c))
+       {
+           printf("Ils sont égaux\n");
+       }
+       else if((a==c) && (a!=d))
+       {
+           printf("Tout ça...\n");
+       }
+
+       //Boucles
+#define TAILLE 10
+       int i=0;
+
+       const int t=10;
+
+       for(i=0; i<t;i++)
+       {
+           printf("Bonjour le monde\n");
+       }
+
+       //TQ
+       i=0;
+       while (i<TAILLE)
+       {
+           printf("Coucou\n");
+           i++;
+       }
+
+       //FAIRE TQ
+
+       i=0;
+       do{
+        printf("Eh salut\n");
+        i++;
+       }
+       while(i<TAILLE);
+
+       //Cas alternatif de condition
+       int choix=-1;
+
+       printf("Veuillez entrer votre choix\n")
+       scanff("%d",&choix);
+       switch case(choix)
+       {
+
+           0: printf("Quitter\n"); break;
+           1:printf("calculer\n"); break;
+           2: printf("Jouer\n"); break;
+           default: printf("Default\n"); break;
+       }
+
+       //test a?b instruction1 : instruction2
+       a==b? printf("Egaux"): printf("Diff");
+
+
+       //Instruction break;
+       for(i=0;i<TAILLE;i++)
+       {
+           printf("Hello world\n");
+
+           if(i==3)
+           {
+               break;
+           }
+       }
+
+
+       //Instruction continue;
+       for(i=0;i<TAILLE;i++)
+       {
+           printf("Hello world\n");
+
+           if(i<3)
+           {
+               printf("continue\n");
+               continue;
+           }
+       }
+
 
 
 }
